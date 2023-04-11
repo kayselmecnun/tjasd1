@@ -1,0 +1,51 @@
+<nav class="navbar navbar-light bg-light sticky-top pt-0 pb-0">
+  <div id="readergpt__navContainer" class="container">
+    <div class="navbar-brand">
+      <img id="readergpt__navbarIcon" style="width: 24px; height: 24px;" class="d-inline-block align-text-middle">
+      <span id="readergpt__navbarTitle" class="align-middle h6">ReaderGPT</span>
+    </div>
+    <button id="readergpt__closeButton" type="button" class="btn btn-close d-flex"></button>
+  </div>
+</nav>
+<div id="readergpt__summarySection">
+  <div class="card d-none" id="readergpt__loginContainer">
+    <div class="card-body">
+      <p class="card-text">Please <a href="https://chat.openai.com" target="_blank" rel="noreferrer"
+          id="readergpt__loginButton" class="card-link">
+          Login</a> to OpenAI. Do refresh this page after login.
+      </p>
+      <p class="card-text mt-2">
+        <small class="text-muted">ChatGPT requires logging in to OpenAI once in a while to use.</small>
+      </p>
+      <div class="alert alert-success" role="alert">
+        Now you can use OpenAI API Key to avoid repeat login and super fast response.
+        <br />
+        <a id="readergpt__optionsPageLink" href="#" target="_blank" class="alert-link">
+          Click here</a> for one time setup.
+      </div>
+      <p id="readergpt__braveWarning" class="card-text mt-2 alert alert-warning d-none">
+        To use it on Brave, please ensure that the <a href="https://i.imgur.com/9F6cTvD.png"
+          target="_blank">fingerprinting setting</a> is disabled in brave:settings/shields
+      </p>
+    </div>
+  </div>
+  <div id="readergpt__gifContainer" class="align-middle mt-3 mb-3 d-none">
+    <span class="spinner-border text-primary mt-2" role="status"></span>
+    <span class="align-middle readergpt__readableText">Summarising with ChatGPT</span>
+  </div>
+  <div id="readergpt__summaryTextHeader" class="m-3 d-none lead">
+    Summarised via ChatGPT (<a id="readergpt__editPromptLink" href="#" target="_blank">Edit Prompt</a>)
+  </div>
+  <div id="readergpt__contentContainer" class="d-none">
+    <p id="readergpt__readableText" role="alert" class="readergpt__readableText alert alert-secondary"></p>
+    <button id="readergpt__copyButton" class="btn btn-link">
+      <img id="readergpt__copyButtonImage"></img>
+    </button>
+  </div>
+  <div id="readergpt__buyMeACoffee" class="d-none d-flex justify-content-center mb-4">
+    <a href="https://www.buymeacoffee.com/jindal" target="_blank">
+      <img
+        src="https://img.buymeacoffee.com/button-api/?text=Support me with a coffee&emoji=&slug=jindal&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" />
+    </a>
+  </div>
+</div>
